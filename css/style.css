@@ -329,11 +329,11 @@
 
 .animated-text span::after {
   content: ' ';
-  font-size: 15px;
+  font-size: 30px;
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: var(--border-color);
+  background-color: #e85a4f;
   border-left: 2px solid beige;
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
