@@ -273,6 +273,7 @@
 
 .site-main .about-area {
   padding: 7rem 5rem;
+  background-color: #e85a4f;
 }
 
 .site-main .about-area .about-title .container {
@@ -408,7 +409,7 @@
   color: beige;
 }
 .about-area {
-  background-color: #e85a4f;;
+  background-color: #e85a4f;
 }
 
 .site-main .about-area .about-title .paragraph .skills-icons {
@@ -650,7 +651,7 @@ footer.footer-area {
 footer.footer-area .social a > i {
   font-size: 22px;
   padding: 2rem;
-  color: #e98074;
+  color: var(--border-color);
 }
 
 footer.footer-area .social a:hover > i {
