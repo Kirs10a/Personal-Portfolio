@@ -26,9 +26,9 @@
 }
 
 .header_area .main-menu .navbar-nav .active a {
-  background: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(100deg, #e85a4f 0%, #d8c3a5 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
