@@ -980,5 +980,10 @@
     .site-main .about-area {
       padding: 3% 4%;
     }
+
+    #imagecup,
+    #talk {
+      display: none; /* Disable Image to avoid text overflow */
+  }
   }
 }
