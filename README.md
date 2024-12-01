@@ -17,7 +17,7 @@ This portfolio was designed and developed from scratch using:
 - **Interactive Animations**: Subtle, smooth animations for an engaging user experience.
 
 ## How to View
-Clone the repository and open `(https://kirs10a.github.io/Personal-Portfolio/)` in your browser.
+Clone the repository and open `https://kirs10a.github.io/Personal-Portfolio/` in your browser.
 
 ## Tech Stack
 - HTML
