@@ -1,0 +1,668 @@
+/* Import fonts from css file */
+@import url(./fonts.css);
+
+/* CSS Variables */
+@import url(./partials/_variables.css);
+
+/* Global Styling */
+@import url(./partials/_global.css);
+
+/* Start Navigation */
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 2rem;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 5rem;
+}
+
+.header_area .main-menu .navbar-nav .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* End Navigation */
+
+/* Banner Area */
+
+#elastic {
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  width: 80%;
+  height: 600px;
+  display: block;
+  margin-left: 10%;
+  align-items: center;
+  font-size: 65px;
+}
+
+#static {
+  font-size: 50px;
+  font-weight: bold;
+  color: linear-gradient(100deg, #e85a4f 0%, #d8c3a5 60%);
+}
+
+#intro {
+  font-size: 30px;
+  align-items: center;
+  margin-left: 10%;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#variable {
+  font-size: 70px;
+  display: flex;
+  text-align: center;
+  animation: pulseEffect 3s infinite ease-in-out;
+}
+
+#work {
+  font-weight: 300; /* Initial lighter weight for animation */
+  font-size: 60px;
+  letter-spacing: 2px;
+  animation: pulseEffect2 3s infinite ease-in-out; /* Pulse animation */
+  color: rgb(218, 103, 27);
+}
+
+#coffeem {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  padding: 10px;
+  padding-top: 100px;
+  margin-top: 100px;
+  margin-right: 10%;
+}
+
+#imagecup {
+  width: 200px;
+  height: 200px;
+  /* Synchronize image opacity and border transition */
+  transition: opacity 0.3s ease, border 0.3s ease;
+}
+
+.bordered-image {
+  border: 4px solid rgb(218, 103, 27);
+  border-radius: 50%;
+}
+
+#talk {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 15%;
+  color: rgb(218, 103, 27);
+}
+
+@keyframes pulseEffect {
+  0% {
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 0px;
+  }
+  50% {
+    font-weight: 800; /* Make it bold */
+    font-size: 70px; /* Slightly larger font size */
+    letter-spacing: 2px; /* Increase spacing for emphasis */
+  }
+  100% {
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes pulseEffect2 {
+  0% {
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 0px;
+  }
+  50% {
+    font-weight: 300; /* Make it bold */
+    font-size: 60px; /* Slightly larger font size */
+    letter-spacing: 2px; /* Increase spacing for emphasis */
+  }
+  100% {
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 0px;
+  }
+}
+
+/* Bubbles animation */
+.animated-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -60px;
+  width: 30px;
+  height: 30px;
+  background-color: #e85a4f;
+  opacity: 0.4;
+  border-radius: 50%;
+  animation: bubbleFloat 5s infinite ease-in;
+}
+
+/* Different sizes and animation speeds for each bubble */
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(2) {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-duration: 7s;
+}
+
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 60%;
+  animation-duration: 5.5s;
+}
+
+.bubble:nth-child(4) {
+  width: 35px;
+  height: 35px;
+  left: 80%;
+  animation-duration: 6.5s;
+}
+
+.bubble:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  animation-duration: 7.5s;
+}
+
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 50%;
+  animation-duration: 5.8s;
+}
+
+.bubble:nth-child(7) {
+  width: 30px;
+  height: 30px;
+  left: 70%;
+  animation-duration: 6.3s;
+}
+
+/* Floating animation for bubbles */
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.site-main .site-banner {
+  background: #eae7dc;
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 5px 0px 5px 0px;
+}
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after {
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 5rem;
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 7rem 0;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+
+.site-main .about-area {
+  padding: 7rem 5rem;
+}
+
+.site-main .about-area .about-title .container {
+  font-family: var(--roboto);
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin-left: 10px; /* Align to the left */
+  justify-content: center;
+  text-align: center; /* Ensure alignment consistency */
+  display: inline-block; /* Align with h2 element */
+  vertical-align: middle;
+}
+
+/* About Image */
+
+.about-image {
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right */
+  align-items: flex-start; /* Keeps the image at the top initially */
+  margin-top: 50px; /* Move the image lower */
+  margin-right: 30px; /* Add space from the right */
+}
+
+.site-main .about-area .about-image > img {
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-main .about-area .animated-text {
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 1rem;
+  padding: 7px 0 5px 0px;
+  text-align: left;
+  font: 'Roboto';
+}
+
+.animated-text span {
+  position: relative;
+  padding: 0;
+  text-align: justify;
+}
+
+.animated-text span::before {
+  content: 'Python Developer';
+  color: beige;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after {
+  content: ' ';
+  font-size: 15px;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: var(--border-color);
+  border-left: 2px solid beige;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid beige;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: 'Frontend Developer';
+  }
+  21%,
+  40% {
+    content: 'Web Developer';
+  }
+  41%,
+  60% {
+    content: 'Python Developer';
+  }
+  61%,
+  80% {
+    content: 'Data Scientist';
+  }
+  81%,
+  100% {
+    content: 'Radiographic Technologist';
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  40%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 15px);
+  }
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  font: normal bold 20px var(--roboto) !important;
+  letter-spacing: 21px;
+  text-align: left;
+}
+.site-main .about-area .about-title h2 {
+  margin-bottom: 20px; /* Add spacing between title and animated text */
+}
+
+.site-main .about-area .about-title .paragraph > p {
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+  color: beige;
+}
+.about-area {
+  background-color: var(--border-color);
+}
+
+.skills-icons > h5 {
+  font: 'Roboto';
+  color: beige;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.skills-icons img {
+  color: beige;
+  width: 40px;
+  height: 40px;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  padding: 2px 1.5px;
+}
+.skills-icons a {
+  text-decoration: none;
+}
+/* End About Area */
+
+/* Start Project Area */
+
+/* General Spacing and Layout */
+.site-main .project-area {
+  padding: 4rem 0;
+}
+
+.site-main .project-area .project-title h1 > span {
+  display: block;
+  font: normal bold 20px var(--roboto) !important;
+  letter-spacing: 21px;
+  text-align: left;
+}
+.site-main .project-area .project-title h1 {
+  margin-bottom: 40px;
+}
+
+.site-main .project-area .project-title h1 {
+  margin-top: -30px; /* Align with the about-title layout */
+}
+
+.site-main .project-area .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adds consistent spacing between items */
+}
+
+.site-main .project-area .grid .our-project {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-main .project-area .grid .our-project:hover {
+  transform: translateY(-10px);
+  padding-top: 5px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.site-main .project-area .grid .our-project .img {
+  width: 100;
+  height: 100;
+  height: auto;
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+  padding-top: 20px;
+}
+
+.site-main .project-area .grid .our-project .img a:hover {
+  filter: brightness(1.2) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* Title and Text */
+.site-main .project-area .grid .our-project .title h4 {
+  font: normal 700 20px/1.5 var(--roboto);
+  margin-top: 1rem;
+}
+
+.site-main .project-area .grid .our-project .title span {
+  font: normal bold 12px var(--roboto);
+  color: #777;
+}
+
+/* Button Group Styling */
+.site-main .project-area .button-group {
+  margin-bottom: 2rem;
+}
+
+.site-main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 15px/1.1 var(--roboto);
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-main .project-area .button-group button.active,
+.site-main .project-area .button-group button:hover {
+  background-color: #424649;
+  color: white;
+}
+
+/* Flip Card Styles */
+.our-project {
+  perspective: 1000px;
+  margin-bottom: 2rem;
+}
+
+.our-project .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.our-project .flip-card-front,
+.our-project .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Front Side */
+.our-project .flip-card-front {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eaeaea;
+  min-height: 100px;
+}
+.our-project .flip-card-front .text-secondary {
+  padding-bottom: 15px;
+}
+
+.flip-card-front img {
+  display: block;
+  margin: 0 auto;
+}
+
+.our-project .flip-card-front img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.our-project .flip-card-front .title h4 {
+  margin: 0.5rem 0;
+  font-size: 12px;
+}
+
+.our-project .flip-card-front .title span {
+  font-size: 12px;
+  color: #555;
+}
+
+.text-secondary {
+  padding-bottom: 1.2px;
+}
+
+/* Back Side */
+.our-project .flip-card-back {
+  background: #eae7dc;
+  color: var(--text-color);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem;
+  border: 1px solid #eae7dc;
+}
+
+.our-project .flip-card-back a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  text-decoration: underline;
+  padding-bottom: 0.1px;
+  font-size: 15px;
+  color: black;
+}
+
+.our-project .flip-card-back p {
+  font-size: 12px;
+}
+
+.info {
+  color: #777;
+}
+
+/* Flip Effect */
+.our-project.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .our-project {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .our-project {
+    flex: 1 1 calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+  }
+}
+
+/* End project Area */
+
+/* Start Footer Area */
+
+footer.footer-area {
+  padding: 5rem 0;
+  background-color: #eae7dc;
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i {
+  color: #0077b5;
+}
+
+footer.footer-area .container .para {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.footer-area > a {
+  text-decoration: none;
+}
+
+.footer-area .container > button {
+  color: palevioletred;
+}
+
+/* End Footer Area */
