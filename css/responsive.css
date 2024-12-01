@@ -971,6 +971,11 @@
       padding: 1rem;
     }
 
+    #imagecup,
+    #talk {
+      display: none; /* Disable Image to avoid text overflow */
+    }
+
     .container {
       max-width: 90%;
     }
@@ -980,10 +985,5 @@
     .site-main .about-area {
       padding: 3% 4%;
     }
-
-    #imagecup,
-    #talk {
-      display: none; /* Disable Image to avoid text overflow */
-  }
   }
 }
