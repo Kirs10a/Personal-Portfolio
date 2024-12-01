@@ -963,6 +963,7 @@
     width: 20px; /* Reduce size of the up-arrow image */
     height: 20px; /* Maintain aspect ratio */
   }
+}
   /* END CONTACT AREA */
 
   /* If the viewport is equal to 1910px or less than that */
@@ -986,4 +987,4 @@
       padding: 3% 4%;
     }
   }
-}
+
