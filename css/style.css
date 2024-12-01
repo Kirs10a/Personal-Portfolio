@@ -408,7 +408,12 @@
   color: beige;
 }
 .about-area {
-  background-color: var(--border-color);
+  background-color: #e85a4f;;
+}
+
+.site-main .about-area .about-title .paragraph .skills-icons {
+  margin-bottom: 5px; /* Decrease the space below the icons */
+  padding-bottom: 25px;
 }
 
 .skills-icons > h5 {
