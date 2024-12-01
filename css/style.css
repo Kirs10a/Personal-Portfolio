@@ -650,7 +650,7 @@ footer.footer-area {
 footer.footer-area .social a > i {
   font-size: 22px;
   padding: 2rem;
-  color: var(--border-color);
+  color: #e98074;
 }
 
 footer.footer-area .social a:hover > i {
